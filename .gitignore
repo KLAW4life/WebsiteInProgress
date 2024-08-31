@@ -1,0 +1,12 @@
+# virtualenv
+.venv/
+venv/
+
+# VS Code
+.vscode
+
+# SCSS
+.sass-cache
+
+.env
+.flaskenv
