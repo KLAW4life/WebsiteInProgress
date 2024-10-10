@@ -28,5 +28,5 @@ $ pip install -r requirements.txt
 ```
 Now you are ready to run the application!
 ```bash
-$ flask --app app --debug run
+$ flask --app Portfolio --debug run
 ```
