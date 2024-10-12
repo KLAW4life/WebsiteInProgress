@@ -5,7 +5,7 @@ Portfolio = Flask(__name__)
 
 @Portfolio.route('/')
 def index():
-    return render_template('homepage.html')
+    return render_template('base.html')
 
 
 if __name__ == '__main__':
