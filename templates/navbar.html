@@ -1,4 +1,4 @@
-<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+<!-- <nav class="col-md-2 d-none d-md-block bg-light sidebar">
     <div class="sidebar-sticky">
         <ul class="nav flex-column">
             <img src="{{ url_for('static', filename='images/MainPhoto.jpeg') }}" alt="Profile Avatar Image" class="img-fluid rounded-circle mb-3">
@@ -32,5 +32,42 @@
             </li>
         </ul>
 
+    </div>
+</nav> -->
+
+<!-- Sidebar Navigation with Scrollspy -->
+<nav id="scrollspySidebar" class="col-md-2 d-none d-md-block bg-light sidebar">
+    <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+            <img src="{{ url_for('static', filename='images/MainPhoto.jpeg') }}" alt="Profile Avatar Image" class="img-fluid rounded-circle mb-3">
+            
+            <h2 class="text-black text-center">Kerene Wright</h2>
+
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#home-section">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#about-section">
+                    About
+                </a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#resume-section">
+                    Resume
+                </a>
+            </li>           
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#portfolio-section">
+                    Portfolio
+                </a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#contact-section">
+                    Contact Me
+                </a>
+            </li>
+        </ul>
     </div>
 </nav>

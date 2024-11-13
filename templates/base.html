@@ -16,7 +16,7 @@
     
     {% block css %} {% endblock%}
 </head>
-<body>
+<body data-mdb-spy="scroll" data-mdb-target="#scrollspySidebar" data-mdb-offset="0">
     <div class="container-fluid">
         <div class="row">
             
@@ -24,18 +24,60 @@
                 {% include "navbar.html" %}
             </div>
            
-
-            <main role="main" class="col-md-9 ms-sm-auto col-lg-10 pt-3 px-4">
-
-                <img src="{{ url_for('static', filename='images/Banner.png') }}" alt="Profile Avatar Image" class="img-fluid ">
-                
-
-
-                <div class="container text-center mt-5" id="about">
-                    <h2>Kerene Wright</h2>
-                    <p>I'm <span class="typed"></span></p>
+            <!-- <section>
+                 <img src="static/images/Banner.png" class="img-fluid" alt="...">
+            </section> -->
+            <!-- <main role="main" class="col-md-9 ms-sm-auto col-lg-10 px-0">
+                Background container with the image
+                <div class="position-relative text-center" style="height: 85vh; background-image: url('{{ url_for('static', filename='images/Banner.png') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    Overlaying text
+                    <div class="position-absolute top-50 start-50 translate-middle text-white">
+                        <h2>Kerene Wright</h2>
+                        <p>I'm <span class="typed"></span></p>
+                    </div>
                 </div>
+            </main> -->
+
+            <!-- Main Content Sections -->
+            <main class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <section id="home-section" class="pt-4">
+                    <!-- <div class="position-relative text-center" style="height: 85vh; background-image: url('{{ url_for('static', filename='images/Banner.png') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        Overlaying text
+                        <div class="position-absolute top-50 start-50 translate-middle text-white">
+                            <h2>Kerene Wright</h2>
+                            <p>I'm <span class="typed"></span></p>
+                        </div>
+                    </div> -->
+                    <img src="static/images/Banner.png" class="img-fluid" alt="...">
+                    <div class="position-absolute top-50 start-50 translate-middle text-white">
+                        <h2>Kerene Wright</h2>
+                        <p>I'm <span class="typed"></span></p>
+                    </div>
+                </section>
+
+                <section id="about-section" class="pt-4">
+                    <h1>About</h1>
+                    <p>Learn more about me in this section.</p>
+                </section>
+
+                <section id="resume-section" class="pt-4">
+                    <h1>Resume</h1>
+                    <p>Details of my resume.</p>
+                </section>
+
+                <section id="portfolio-section" class="pt-4">
+                    <h1>Portfolio</h1>
+                    <p>Check out my work here.</p>
+                </section>
+
+                <section id="contact-section" class="pt-4">
+                    <h1>Contact Me</h1>
+                    <p>Get in touch through this section.</p>
+                </section>
             </main>
+
+            
+            
         </div>
     </div>
 
@@ -46,6 +88,8 @@
     </footer>
 
     <!-- Custom JS -->
+    <!-- MDBootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
     <script src="{{ url_for('static', filename='js/Portfolio.js') }}"></script>
     {% block js %} {% endblock%}
     
